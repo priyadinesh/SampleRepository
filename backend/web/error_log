@@ -1,0 +1,672 @@
+[08-Jul-2017 15:05:38 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WWD0wveCi8@16K-ANATiBAAAAA0',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '201.6.107.126',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '50897',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1499526338.310473918914794921875,
+    'REQUEST_TIME' => 1499526338,
+    'argv' => [],
+    'argc' => 0,
+]
+[26-Jul-2017 02:15:40 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WXf7SzSmRZGdJ2vq4iM-DgAAAE4',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '201.6.107.126',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '56680',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1501035340.0453550815582275390625,
+    'REQUEST_TIME' => 1501035340,
+    'argv' => [],
+    'argc' => 0,
+]
+[13-Aug-2017 00:32:52 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WY@eNEzUpN2MyFIzt5QaWwAAAEQ',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '201.6.107.126',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '36004',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1502584372.40184688568115234375,
+    'REQUEST_TIME' => 1502584372,
+    'argv' => [],
+    'argc' => 0,
+]
+[29-Aug-2017 16:07:04 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WaWRKISFd0U2VfpRcT63fwAAAJg',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '201.6.107.126',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '33297',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1504022824.840856075286865234375,
+    'REQUEST_TIME' => 1504022824,
+    'argv' => [],
+    'argc' => 0,
+]
+[16-Sep-2017 04:52:19 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WbyuA6qpVYCcq6k1IvMdHwAAAIQ',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '201.6.107.126',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '36006',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1505537539.369658946990966796875,
+    'REQUEST_TIME' => 1505537539,
+    'argv' => [],
+    'argc' => 0,
+]
+[05-Oct-2017 12:02:11 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WdYfQ6kAmMa9AukhOZHP6AAAAJU',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.27.1 zlib/1.2.3 libidn/1.18 libssh2/1.4.2',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '219.135.58.224',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '21783',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1507204931.5533859729766845703125,
+    'REQUEST_TIME' => 1507204931,
+    'argv' => [],
+    'argc' => 0,
+]
+[06-Oct-2017 03:14:11 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Wdb1A9moMg8H45Zu3t4NjwAAAFY',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.29.0',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '46.17.46.213',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '46700',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1507259651.487152099609375,
+    'REQUEST_TIME' => 1507259651,
+    'argv' => [],
+    'argc' => 0,
+]
+[11-Nov-2017 21:43:12 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: User::identityClass must be set. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\User', Array, Array)
+#4 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\web\\User', Array, Array)
+#5 /home/baskar2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(159): yii\di\ServiceLocator->get('user')
+#7 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Instance.php(132): yii\di\Instance->get(NULL)
+#8 /home/baskar2/public_html/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\web\\User')
+#9 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#12 /home/baskar2/public_html/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\filters\\Acc...', Array, Array)
+#13 /home/baskar2/public_html/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Acc...', Array, Array)
+#14 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(667): yii\BaseYii::createObject(Array)
+#15 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(651): yii\base\Component->attachBehaviorInternal('access', Array)
+#16 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#17 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#18 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\web\ErrorAction))
+#19 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\web\ErrorAction))
+#20 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#21 /home/baskar2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('site/error')
+#22 /home/baskar2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "config.php". in /home/baskar2/public_html/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('config.php', Array)
+#1 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/baskar2/public_html/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/baskar2/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/baskar2/public_html/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TZ' => 'UTC',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php70',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Wgdu8BoWRKr9hqTWEiOqsgAAAQ4',
+    'SCRIPT_URL' => '/admin/config.php',
+    'SCRIPT_URI' => 'https://138.197.111.0/admin/config.php',
+    'HTTPS' => 'on',
+    'HTTP_USER_AGENT' => 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5',
+    'HTTP_HOST' => '138.197.111.0',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_X_HTTPS' => '1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => '138.197.111.0',
+    'SERVER_ADDR' => '138.197.111.0',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '201.6.107.126',
+    'DOCUMENT_ROOT' => '/home/baskar2/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@fnr.agentrecruiting.com',
+    'SCRIPT_FILENAME' => '/home/baskar2/public_html/backend/web/index.php',
+    'REMOTE_PORT' => '48670',
+    'REDIRECT_URL' => '/backend/web/index.php',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/config.php',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php70',
+    'ORIG_PATH_INFO' => '/backend/web/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/baskar2/public_html/backend/web/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php70',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1510436592.8841869831085205078125,
+    'REQUEST_TIME' => 1510436592,
+    'argv' => [],
+    'argc' => 0,
+]
